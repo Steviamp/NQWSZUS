@@ -1,7 +1,7 @@
 ﻿document.addEventListener("DOMContentLoaded", () => {
     const storeSelect = document.getElementById("store-select");
     const servicesContainer = document.getElementById("services-container");
-    const apiBase = "http://localhost:7123/api";
+    const apiBase = "/api";
 
     // Populate store dropdown
     stores.forEach(store => {
@@ -20,7 +20,7 @@
         let serviceTypes = [];
         try {
             const response = await fetch(
-                `${apiBase}/servicetype?host=${encodeURIComponent(store.host)}&port=${store.port}`
+                `${apiBase}/ServiceType?host=${encodeURIComponent(store.host)}&port=${store.port}`
             );
             serviceTypes = await response.json();
         } catch (e) {
