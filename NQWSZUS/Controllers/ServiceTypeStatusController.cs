@@ -17,7 +17,6 @@ namespace NQWSZUS.Controllers
                 _soapService = soapService;
             }
 
-            /// Επιστρέφει true αν η υπηρεσία είναι ενεργή
             [HttpGet("{serviceType}")]
             public async Task<ActionResult<bool>> GetStatus(
                 int serviceType,
@@ -26,10 +25,9 @@ namespace NQWSZUS.Controllers
             )
             {
                 var isActive = await _soapService.IsServiceTypeStatusActiveAsync(serviceType, host, port);
-                return Ok(isActive);
+               return Ok(isActive);
             }
 
-            /// Ενεργοποιεί/Απενεργοποιεί την υπηρεσία
             [HttpPost("{serviceType}")]
             public async Task<IActionResult> SetStatus(
                 int serviceType,
