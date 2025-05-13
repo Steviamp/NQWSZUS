@@ -7,13 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace nqwszus
+namespace ServiceReference
 {
     using System.Runtime.Serialization;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ServiceType", Namespace="http://www.nemoq.se/")]
     public partial class ServiceType : object
     {
@@ -50,7 +50,7 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Priority", Namespace="http://www.nemoq.se/")]
     public partial class Priority : object
     {
@@ -87,7 +87,7 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Cashier", Namespace="http://www.nemoq.se/")]
     public partial class Cashier : object
     {
@@ -123,76 +123,76 @@ namespace nqwszus
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.nemoq.se/", ConfigurationName="nqwszus.NQWSZUSSoap")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.nemoq.se/", ConfigurationName="ServiceReference.NQWSZUSSoap")]
     public interface NQWSZUSSoap
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/GetServiceTypeList", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.GetServiceTypeListResponse> GetServiceTypeListAsync(nqwszus.GetServiceTypeListRequest request);
+        System.Threading.Tasks.Task<ServiceReference.GetServiceTypeListResponse> GetServiceTypeListAsync(ServiceReference.GetServiceTypeListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/GetServiceTypeListByCashier", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.GetServiceTypeListByCashierResponse> GetServiceTypeListByCashierAsync(nqwszus.GetServiceTypeListByCashierRequest request);
+        System.Threading.Tasks.Task<ServiceReference.GetServiceTypeListByCashierResponse> GetServiceTypeListByCashierAsync(ServiceReference.GetServiceTypeListByCashierRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/GetPriorityList", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.GetPriorityListResponse> GetPriorityListAsync(nqwszus.GetPriorityListRequest request);
+        System.Threading.Tasks.Task<ServiceReference.GetPriorityListResponse> GetPriorityListAsync(ServiceReference.GetPriorityListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/GetPriorityListByCashier", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.GetPriorityListByCashierResponse> GetPriorityListByCashierAsync(nqwszus.GetPriorityListByCashierRequest request);
+        System.Threading.Tasks.Task<ServiceReference.GetPriorityListByCashierResponse> GetPriorityListByCashierAsync(ServiceReference.GetPriorityListByCashierRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/SetPriority", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.SetPriorityResponse> SetPriorityAsync(nqwszus.SetPriorityRequest request);
+        System.Threading.Tasks.Task<ServiceReference.SetPriorityResponse> SetPriorityAsync(ServiceReference.SetPriorityRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/GetCashierList", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.GetCashierListResponse> GetCashierListAsync(nqwszus.GetCashierListRequest request);
+        System.Threading.Tasks.Task<ServiceReference.GetCashierListResponse> GetCashierListAsync(ServiceReference.GetCashierListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/ActivateServiceType", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.ActivateServiceTypeResponse> ActivateServiceTypeAsync(nqwszus.ActivateServiceTypeRequest request);
+        System.Threading.Tasks.Task<ServiceReference.ActivateServiceTypeResponse> ActivateServiceTypeAsync(ServiceReference.ActivateServiceTypeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/ActivateCashier", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.ActivateCashierResponse> ActivateCashierAsync(nqwszus.ActivateCashierRequest request);
+        System.Threading.Tasks.Task<ServiceReference.ActivateCashierResponse> ActivateCashierAsync(ServiceReference.ActivateCashierRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/ActivateUser", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.ActivateUserResponse> ActivateUserAsync(nqwszus.ActivateUserRequest request);
+        System.Threading.Tasks.Task<ServiceReference.ActivateUserResponse> ActivateUserAsync(ServiceReference.ActivateUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/AssignServiceType", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.AssignServiceTypeResponse> AssignServiceTypeAsync(nqwszus.AssignServiceTypeRequest request);
+        System.Threading.Tasks.Task<ServiceReference.AssignServiceTypeResponse> AssignServiceTypeAsync(ServiceReference.AssignServiceTypeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/UnssignServiceType", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.UnssignServiceTypeResponse> UnssignServiceTypeAsync(nqwszus.UnssignServiceTypeRequest request);
+        System.Threading.Tasks.Task<ServiceReference.UnssignServiceTypeResponse> UnssignServiceTypeAsync(ServiceReference.UnssignServiceTypeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/IsServiceTypeStatusActive", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.IsServiceTypeStatusActiveResponse> IsServiceTypeStatusActiveAsync(nqwszus.IsServiceTypeStatusActiveRequest request);
+        System.Threading.Tasks.Task<ServiceReference.IsServiceTypeStatusActiveResponse> IsServiceTypeStatusActiveAsync(ServiceReference.IsServiceTypeStatusActiveRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/IsCashierStatusActive", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.IsCashierStatusActiveResponse> IsCashierStatusActiveAsync(nqwszus.IsCashierStatusActiveRequest request);
+        System.Threading.Tasks.Task<ServiceReference.IsCashierStatusActiveResponse> IsCashierStatusActiveAsync(ServiceReference.IsCashierStatusActiveRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.nemoq.se/IsUserStatusActive", ReplyAction="*")]
-        System.Threading.Tasks.Task<nqwszus.IsUserStatusActiveResponse> IsUserStatusActiveAsync(nqwszus.IsUserStatusActiveRequest request);
+        System.Threading.Tasks.Task<ServiceReference.IsUserStatusActiveResponse> IsUserStatusActiveAsync(ServiceReference.IsUserStatusActiveRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetServiceTypeListRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetServiceTypeList", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetServiceTypeListRequestBody Body;
+        public ServiceReference.GetServiceTypeListRequestBody Body;
         
         public GetServiceTypeListRequest()
         {
         }
         
-        public GetServiceTypeListRequest(nqwszus.GetServiceTypeListRequestBody Body)
+        public GetServiceTypeListRequest(ServiceReference.GetServiceTypeListRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetServiceTypeListRequestBody
@@ -216,67 +216,67 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetServiceTypeListResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetServiceTypeListResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetServiceTypeListResponseBody Body;
+        public ServiceReference.GetServiceTypeListResponseBody Body;
         
         public GetServiceTypeListResponse()
         {
         }
         
-        public GetServiceTypeListResponse(nqwszus.GetServiceTypeListResponseBody Body)
+        public GetServiceTypeListResponse(ServiceReference.GetServiceTypeListResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetServiceTypeListResponseBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public nqwszus.ServiceType[] GetServiceTypeListResult;
+        public ServiceReference.ServiceType[] GetServiceTypeListResult;
         
         public GetServiceTypeListResponseBody()
         {
         }
         
-        public GetServiceTypeListResponseBody(nqwszus.ServiceType[] GetServiceTypeListResult)
+        public GetServiceTypeListResponseBody(ServiceReference.ServiceType[] GetServiceTypeListResult)
         {
             this.GetServiceTypeListResult = GetServiceTypeListResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetServiceTypeListByCashierRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetServiceTypeListByCashier", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetServiceTypeListByCashierRequestBody Body;
+        public ServiceReference.GetServiceTypeListByCashierRequestBody Body;
         
         public GetServiceTypeListByCashierRequest()
         {
         }
         
-        public GetServiceTypeListByCashierRequest(nqwszus.GetServiceTypeListByCashierRequestBody Body)
+        public GetServiceTypeListByCashierRequest(ServiceReference.GetServiceTypeListByCashierRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetServiceTypeListByCashierRequestBody
@@ -304,67 +304,67 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetServiceTypeListByCashierResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetServiceTypeListByCashierResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetServiceTypeListByCashierResponseBody Body;
+        public ServiceReference.GetServiceTypeListByCashierResponseBody Body;
         
         public GetServiceTypeListByCashierResponse()
         {
         }
         
-        public GetServiceTypeListByCashierResponse(nqwszus.GetServiceTypeListByCashierResponseBody Body)
+        public GetServiceTypeListByCashierResponse(ServiceReference.GetServiceTypeListByCashierResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetServiceTypeListByCashierResponseBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public nqwszus.ServiceType[] GetServiceTypeListByCashierResult;
+        public ServiceReference.ServiceType[] GetServiceTypeListByCashierResult;
         
         public GetServiceTypeListByCashierResponseBody()
         {
         }
         
-        public GetServiceTypeListByCashierResponseBody(nqwszus.ServiceType[] GetServiceTypeListByCashierResult)
+        public GetServiceTypeListByCashierResponseBody(ServiceReference.ServiceType[] GetServiceTypeListByCashierResult)
         {
             this.GetServiceTypeListByCashierResult = GetServiceTypeListByCashierResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetPriorityListRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPriorityList", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetPriorityListRequestBody Body;
+        public ServiceReference.GetPriorityListRequestBody Body;
         
         public GetPriorityListRequest()
         {
         }
         
-        public GetPriorityListRequest(nqwszus.GetPriorityListRequestBody Body)
+        public GetPriorityListRequest(ServiceReference.GetPriorityListRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetPriorityListRequestBody
@@ -388,67 +388,67 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetPriorityListResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPriorityListResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetPriorityListResponseBody Body;
+        public ServiceReference.GetPriorityListResponseBody Body;
         
         public GetPriorityListResponse()
         {
         }
         
-        public GetPriorityListResponse(nqwszus.GetPriorityListResponseBody Body)
+        public GetPriorityListResponse(ServiceReference.GetPriorityListResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetPriorityListResponseBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public nqwszus.Priority[] GetPriorityListResult;
+        public ServiceReference.Priority[] GetPriorityListResult;
         
         public GetPriorityListResponseBody()
         {
         }
         
-        public GetPriorityListResponseBody(nqwszus.Priority[] GetPriorityListResult)
+        public GetPriorityListResponseBody(ServiceReference.Priority[] GetPriorityListResult)
         {
             this.GetPriorityListResult = GetPriorityListResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetPriorityListByCashierRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPriorityListByCashier", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetPriorityListByCashierRequestBody Body;
+        public ServiceReference.GetPriorityListByCashierRequestBody Body;
         
         public GetPriorityListByCashierRequest()
         {
         }
         
-        public GetPriorityListByCashierRequest(nqwszus.GetPriorityListByCashierRequestBody Body)
+        public GetPriorityListByCashierRequest(ServiceReference.GetPriorityListByCashierRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetPriorityListByCashierRequestBody
@@ -476,67 +476,67 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetPriorityListByCashierResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPriorityListByCashierResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetPriorityListByCashierResponseBody Body;
+        public ServiceReference.GetPriorityListByCashierResponseBody Body;
         
         public GetPriorityListByCashierResponse()
         {
         }
         
-        public GetPriorityListByCashierResponse(nqwszus.GetPriorityListByCashierResponseBody Body)
+        public GetPriorityListByCashierResponse(ServiceReference.GetPriorityListByCashierResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetPriorityListByCashierResponseBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public nqwszus.Priority[] GetPriorityListByCashierResult;
+        public ServiceReference.Priority[] GetPriorityListByCashierResult;
         
         public GetPriorityListByCashierResponseBody()
         {
         }
         
-        public GetPriorityListByCashierResponseBody(nqwszus.Priority[] GetPriorityListByCashierResult)
+        public GetPriorityListByCashierResponseBody(ServiceReference.Priority[] GetPriorityListByCashierResult)
         {
             this.GetPriorityListByCashierResult = GetPriorityListByCashierResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class SetPriorityRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SetPriority", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.SetPriorityRequestBody Body;
+        public ServiceReference.SetPriorityRequestBody Body;
         
         public SetPriorityRequest()
         {
         }
         
-        public SetPriorityRequest(nqwszus.SetPriorityRequestBody Body)
+        public SetPriorityRequest(ServiceReference.SetPriorityRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class SetPriorityRequestBody
@@ -568,27 +568,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class SetPriorityResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SetPriorityResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.SetPriorityResponseBody Body;
+        public ServiceReference.SetPriorityResponseBody Body;
         
         public SetPriorityResponse()
         {
         }
         
-        public SetPriorityResponse(nqwszus.SetPriorityResponseBody Body)
+        public SetPriorityResponse(ServiceReference.SetPriorityResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class SetPriorityResponseBody
@@ -608,27 +608,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetCashierListRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCashierList", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetCashierListRequestBody Body;
+        public ServiceReference.GetCashierListRequestBody Body;
         
         public GetCashierListRequest()
         {
         }
         
-        public GetCashierListRequest(nqwszus.GetCashierListRequestBody Body)
+        public GetCashierListRequest(ServiceReference.GetCashierListRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetCashierListRequestBody
@@ -652,67 +652,67 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetCashierListResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCashierListResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.GetCashierListResponseBody Body;
+        public ServiceReference.GetCashierListResponseBody Body;
         
         public GetCashierListResponse()
         {
         }
         
-        public GetCashierListResponse(nqwszus.GetCashierListResponseBody Body)
+        public GetCashierListResponse(ServiceReference.GetCashierListResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class GetCashierListResponseBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public nqwszus.Cashier[] GetCashierListResult;
+        public ServiceReference.Cashier[] GetCashierListResult;
         
         public GetCashierListResponseBody()
         {
         }
         
-        public GetCashierListResponseBody(nqwszus.Cashier[] GetCashierListResult)
+        public GetCashierListResponseBody(ServiceReference.Cashier[] GetCashierListResult)
         {
             this.GetCashierListResult = GetCashierListResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class ActivateServiceTypeRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ActivateServiceType", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.ActivateServiceTypeRequestBody Body;
+        public ServiceReference.ActivateServiceTypeRequestBody Body;
         
         public ActivateServiceTypeRequest()
         {
         }
         
-        public ActivateServiceTypeRequest(nqwszus.ActivateServiceTypeRequestBody Body)
+        public ActivateServiceTypeRequest(ServiceReference.ActivateServiceTypeRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class ActivateServiceTypeRequestBody
@@ -744,27 +744,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class ActivateServiceTypeResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ActivateServiceTypeResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.ActivateServiceTypeResponseBody Body;
+        public ServiceReference.ActivateServiceTypeResponseBody Body;
         
         public ActivateServiceTypeResponse()
         {
         }
         
-        public ActivateServiceTypeResponse(nqwszus.ActivateServiceTypeResponseBody Body)
+        public ActivateServiceTypeResponse(ServiceReference.ActivateServiceTypeResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class ActivateServiceTypeResponseBody
@@ -784,27 +784,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class ActivateCashierRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ActivateCashier", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.ActivateCashierRequestBody Body;
+        public ServiceReference.ActivateCashierRequestBody Body;
         
         public ActivateCashierRequest()
         {
         }
         
-        public ActivateCashierRequest(nqwszus.ActivateCashierRequestBody Body)
+        public ActivateCashierRequest(ServiceReference.ActivateCashierRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class ActivateCashierRequestBody
@@ -836,27 +836,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class ActivateCashierResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ActivateCashierResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.ActivateCashierResponseBody Body;
+        public ServiceReference.ActivateCashierResponseBody Body;
         
         public ActivateCashierResponse()
         {
         }
         
-        public ActivateCashierResponse(nqwszus.ActivateCashierResponseBody Body)
+        public ActivateCashierResponse(ServiceReference.ActivateCashierResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class ActivateCashierResponseBody
@@ -876,27 +876,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class ActivateUserRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ActivateUser", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.ActivateUserRequestBody Body;
+        public ServiceReference.ActivateUserRequestBody Body;
         
         public ActivateUserRequest()
         {
         }
         
-        public ActivateUserRequest(nqwszus.ActivateUserRequestBody Body)
+        public ActivateUserRequest(ServiceReference.ActivateUserRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class ActivateUserRequestBody
@@ -928,27 +928,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class ActivateUserResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ActivateUserResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.ActivateUserResponseBody Body;
+        public ServiceReference.ActivateUserResponseBody Body;
         
         public ActivateUserResponse()
         {
         }
         
-        public ActivateUserResponse(nqwszus.ActivateUserResponseBody Body)
+        public ActivateUserResponse(ServiceReference.ActivateUserResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class ActivateUserResponseBody
@@ -968,27 +968,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class AssignServiceTypeRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AssignServiceType", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.AssignServiceTypeRequestBody Body;
+        public ServiceReference.AssignServiceTypeRequestBody Body;
         
         public AssignServiceTypeRequest()
         {
         }
         
-        public AssignServiceTypeRequest(nqwszus.AssignServiceTypeRequestBody Body)
+        public AssignServiceTypeRequest(ServiceReference.AssignServiceTypeRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class AssignServiceTypeRequestBody
@@ -1020,27 +1020,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class AssignServiceTypeResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AssignServiceTypeResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.AssignServiceTypeResponseBody Body;
+        public ServiceReference.AssignServiceTypeResponseBody Body;
         
         public AssignServiceTypeResponse()
         {
         }
         
-        public AssignServiceTypeResponse(nqwszus.AssignServiceTypeResponseBody Body)
+        public AssignServiceTypeResponse(ServiceReference.AssignServiceTypeResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class AssignServiceTypeResponseBody
@@ -1060,27 +1060,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class UnssignServiceTypeRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UnssignServiceType", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.UnssignServiceTypeRequestBody Body;
+        public ServiceReference.UnssignServiceTypeRequestBody Body;
         
         public UnssignServiceTypeRequest()
         {
         }
         
-        public UnssignServiceTypeRequest(nqwszus.UnssignServiceTypeRequestBody Body)
+        public UnssignServiceTypeRequest(ServiceReference.UnssignServiceTypeRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class UnssignServiceTypeRequestBody
@@ -1112,27 +1112,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class UnssignServiceTypeResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UnssignServiceTypeResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.UnssignServiceTypeResponseBody Body;
+        public ServiceReference.UnssignServiceTypeResponseBody Body;
         
         public UnssignServiceTypeResponse()
         {
         }
         
-        public UnssignServiceTypeResponse(nqwszus.UnssignServiceTypeResponseBody Body)
+        public UnssignServiceTypeResponse(ServiceReference.UnssignServiceTypeResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class UnssignServiceTypeResponseBody
@@ -1152,27 +1152,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class IsServiceTypeStatusActiveRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="IsServiceTypeStatusActive", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.IsServiceTypeStatusActiveRequestBody Body;
+        public ServiceReference.IsServiceTypeStatusActiveRequestBody Body;
         
         public IsServiceTypeStatusActiveRequest()
         {
         }
         
-        public IsServiceTypeStatusActiveRequest(nqwszus.IsServiceTypeStatusActiveRequestBody Body)
+        public IsServiceTypeStatusActiveRequest(ServiceReference.IsServiceTypeStatusActiveRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class IsServiceTypeStatusActiveRequestBody
@@ -1200,27 +1200,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class IsServiceTypeStatusActiveResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="IsServiceTypeStatusActiveResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.IsServiceTypeStatusActiveResponseBody Body;
+        public ServiceReference.IsServiceTypeStatusActiveResponseBody Body;
         
         public IsServiceTypeStatusActiveResponse()
         {
         }
         
-        public IsServiceTypeStatusActiveResponse(nqwszus.IsServiceTypeStatusActiveResponseBody Body)
+        public IsServiceTypeStatusActiveResponse(ServiceReference.IsServiceTypeStatusActiveResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class IsServiceTypeStatusActiveResponseBody
@@ -1240,27 +1240,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class IsCashierStatusActiveRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="IsCashierStatusActive", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.IsCashierStatusActiveRequestBody Body;
+        public ServiceReference.IsCashierStatusActiveRequestBody Body;
         
         public IsCashierStatusActiveRequest()
         {
         }
         
-        public IsCashierStatusActiveRequest(nqwszus.IsCashierStatusActiveRequestBody Body)
+        public IsCashierStatusActiveRequest(ServiceReference.IsCashierStatusActiveRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class IsCashierStatusActiveRequestBody
@@ -1288,27 +1288,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class IsCashierStatusActiveResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="IsCashierStatusActiveResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.IsCashierStatusActiveResponseBody Body;
+        public ServiceReference.IsCashierStatusActiveResponseBody Body;
         
         public IsCashierStatusActiveResponse()
         {
         }
         
-        public IsCashierStatusActiveResponse(nqwszus.IsCashierStatusActiveResponseBody Body)
+        public IsCashierStatusActiveResponse(ServiceReference.IsCashierStatusActiveResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class IsCashierStatusActiveResponseBody
@@ -1328,27 +1328,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class IsUserStatusActiveRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="IsUserStatusActive", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.IsUserStatusActiveRequestBody Body;
+        public ServiceReference.IsUserStatusActiveRequestBody Body;
         
         public IsUserStatusActiveRequest()
         {
         }
         
-        public IsUserStatusActiveRequest(nqwszus.IsUserStatusActiveRequestBody Body)
+        public IsUserStatusActiveRequest(ServiceReference.IsUserStatusActiveRequestBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class IsUserStatusActiveRequestBody
@@ -1376,27 +1376,27 @@ namespace nqwszus
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class IsUserStatusActiveResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="IsUserStatusActiveResponse", Namespace="http://www.nemoq.se/", Order=0)]
-        public nqwszus.IsUserStatusActiveResponseBody Body;
+        public ServiceReference.IsUserStatusActiveResponseBody Body;
         
         public IsUserStatusActiveResponse()
         {
         }
         
-        public IsUserStatusActiveResponse(nqwszus.IsUserStatusActiveResponseBody Body)
+        public IsUserStatusActiveResponse(ServiceReference.IsUserStatusActiveResponseBody Body)
         {
             this.Body = Body;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://www.nemoq.se/")]
     public partial class IsUserStatusActiveResponseBody
@@ -1415,14 +1415,14 @@ namespace nqwszus
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public interface NQWSZUSSoapChannel : nqwszus.NQWSZUSSoap, System.ServiceModel.IClientChannel
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
+    public interface NQWSZUSSoapChannel : ServiceReference.NQWSZUSSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public partial class NQWSZUSSoapClient : System.ServiceModel.ClientBase<nqwszus.NQWSZUSSoap>, nqwszus.NQWSZUSSoap
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "8.0.0")]
+    public partial class NQWSZUSSoapClient : System.ServiceModel.ClientBase<ServiceReference.NQWSZUSSoap>, ServiceReference.NQWSZUSSoap
     {
         
         /// <summary>
@@ -1459,236 +1459,243 @@ namespace nqwszus
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.GetServiceTypeListResponse> nqwszus.NQWSZUSSoap.GetServiceTypeListAsync(nqwszus.GetServiceTypeListRequest request)
+        System.Threading.Tasks.Task<ServiceReference.GetServiceTypeListResponse> ServiceReference.NQWSZUSSoap.GetServiceTypeListAsync(ServiceReference.GetServiceTypeListRequest request)
         {
             return base.Channel.GetServiceTypeListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.GetServiceTypeListResponse> GetServiceTypeListAsync(string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.GetServiceTypeListResponse> GetServiceTypeListAsync(string Host, int Port)
         {
-            nqwszus.GetServiceTypeListRequest inValue = new nqwszus.GetServiceTypeListRequest();
-            inValue.Body = new nqwszus.GetServiceTypeListRequestBody();
+            ServiceReference.GetServiceTypeListRequest inValue = new ServiceReference.GetServiceTypeListRequest();
+            inValue.Body = new ServiceReference.GetServiceTypeListRequestBody();
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).GetServiceTypeListAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).GetServiceTypeListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.GetServiceTypeListByCashierResponse> nqwszus.NQWSZUSSoap.GetServiceTypeListByCashierAsync(nqwszus.GetServiceTypeListByCashierRequest request)
+        System.Threading.Tasks.Task<ServiceReference.GetServiceTypeListByCashierResponse> ServiceReference.NQWSZUSSoap.GetServiceTypeListByCashierAsync(ServiceReference.GetServiceTypeListByCashierRequest request)
         {
             return base.Channel.GetServiceTypeListByCashierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.GetServiceTypeListByCashierResponse> GetServiceTypeListByCashierAsync(int Cashier, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.GetServiceTypeListByCashierResponse> GetServiceTypeListByCashierAsync(int Cashier, string Host, int Port)
         {
-            nqwszus.GetServiceTypeListByCashierRequest inValue = new nqwszus.GetServiceTypeListByCashierRequest();
-            inValue.Body = new nqwszus.GetServiceTypeListByCashierRequestBody();
+            ServiceReference.GetServiceTypeListByCashierRequest inValue = new ServiceReference.GetServiceTypeListByCashierRequest();
+            inValue.Body = new ServiceReference.GetServiceTypeListByCashierRequestBody();
             inValue.Body.Cashier = Cashier;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).GetServiceTypeListByCashierAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).GetServiceTypeListByCashierAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.GetPriorityListResponse> nqwszus.NQWSZUSSoap.GetPriorityListAsync(nqwszus.GetPriorityListRequest request)
+        System.Threading.Tasks.Task<ServiceReference.GetPriorityListResponse> ServiceReference.NQWSZUSSoap.GetPriorityListAsync(ServiceReference.GetPriorityListRequest request)
         {
             return base.Channel.GetPriorityListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.GetPriorityListResponse> GetPriorityListAsync(string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.GetPriorityListResponse> GetPriorityListAsync(string Host, int Port)
         {
-            nqwszus.GetPriorityListRequest inValue = new nqwszus.GetPriorityListRequest();
-            inValue.Body = new nqwszus.GetPriorityListRequestBody();
+            ServiceReference.GetPriorityListRequest inValue = new ServiceReference.GetPriorityListRequest();
+            inValue.Body = new ServiceReference.GetPriorityListRequestBody();
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).GetPriorityListAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).GetPriorityListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.GetPriorityListByCashierResponse> nqwszus.NQWSZUSSoap.GetPriorityListByCashierAsync(nqwszus.GetPriorityListByCashierRequest request)
+        System.Threading.Tasks.Task<ServiceReference.GetPriorityListByCashierResponse> ServiceReference.NQWSZUSSoap.GetPriorityListByCashierAsync(ServiceReference.GetPriorityListByCashierRequest request)
         {
             return base.Channel.GetPriorityListByCashierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.GetPriorityListByCashierResponse> GetPriorityListByCashierAsync(int Cashier, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.GetPriorityListByCashierResponse> GetPriorityListByCashierAsync(int Cashier, string Host, int Port)
         {
-            nqwszus.GetPriorityListByCashierRequest inValue = new nqwszus.GetPriorityListByCashierRequest();
-            inValue.Body = new nqwszus.GetPriorityListByCashierRequestBody();
+            ServiceReference.GetPriorityListByCashierRequest inValue = new ServiceReference.GetPriorityListByCashierRequest();
+            inValue.Body = new ServiceReference.GetPriorityListByCashierRequestBody();
             inValue.Body.Cashier = Cashier;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).GetPriorityListByCashierAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).GetPriorityListByCashierAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.SetPriorityResponse> nqwszus.NQWSZUSSoap.SetPriorityAsync(nqwszus.SetPriorityRequest request)
+        System.Threading.Tasks.Task<ServiceReference.SetPriorityResponse> ServiceReference.NQWSZUSSoap.SetPriorityAsync(ServiceReference.SetPriorityRequest request)
         {
             return base.Channel.SetPriorityAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.SetPriorityResponse> SetPriorityAsync(int CashierNr, int PriorityNr, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.SetPriorityResponse> SetPriorityAsync(int CashierNr, int PriorityNr, string Host, int Port)
         {
-            nqwszus.SetPriorityRequest inValue = new nqwszus.SetPriorityRequest();
-            inValue.Body = new nqwszus.SetPriorityRequestBody();
+            ServiceReference.SetPriorityRequest inValue = new ServiceReference.SetPriorityRequest();
+            inValue.Body = new ServiceReference.SetPriorityRequestBody();
             inValue.Body.CashierNr = CashierNr;
             inValue.Body.PriorityNr = PriorityNr;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).SetPriorityAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).SetPriorityAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.GetCashierListResponse> nqwszus.NQWSZUSSoap.GetCashierListAsync(nqwszus.GetCashierListRequest request)
+        System.Threading.Tasks.Task<ServiceReference.GetCashierListResponse> ServiceReference.NQWSZUSSoap.GetCashierListAsync(ServiceReference.GetCashierListRequest request)
         {
             return base.Channel.GetCashierListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.GetCashierListResponse> GetCashierListAsync(string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.GetCashierListResponse> GetCashierListAsync(string Host, int Port)
         {
-            nqwszus.GetCashierListRequest inValue = new nqwszus.GetCashierListRequest();
-            inValue.Body = new nqwszus.GetCashierListRequestBody();
+            ServiceReference.GetCashierListRequest inValue = new ServiceReference.GetCashierListRequest();
+            inValue.Body = new ServiceReference.GetCashierListRequestBody();
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).GetCashierListAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).GetCashierListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.ActivateServiceTypeResponse> nqwszus.NQWSZUSSoap.ActivateServiceTypeAsync(nqwszus.ActivateServiceTypeRequest request)
+        System.Threading.Tasks.Task<ServiceReference.ActivateServiceTypeResponse> ServiceReference.NQWSZUSSoap.ActivateServiceTypeAsync(ServiceReference.ActivateServiceTypeRequest request)
         {
             return base.Channel.ActivateServiceTypeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.ActivateServiceTypeResponse> ActivateServiceTypeAsync(int ServiceTypeNr, bool Status, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.ActivateServiceTypeResponse> ActivateServiceTypeAsync(int ServiceTypeNr, bool Status, string Host, int Port)
         {
-            nqwszus.ActivateServiceTypeRequest inValue = new nqwszus.ActivateServiceTypeRequest();
-            inValue.Body = new nqwszus.ActivateServiceTypeRequestBody();
+            ServiceReference.ActivateServiceTypeRequest inValue = new ServiceReference.ActivateServiceTypeRequest();
+            inValue.Body = new ServiceReference.ActivateServiceTypeRequestBody();
             inValue.Body.ServiceTypeNr = ServiceTypeNr;
             inValue.Body.Status = Status;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).ActivateServiceTypeAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).ActivateServiceTypeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.ActivateCashierResponse> nqwszus.NQWSZUSSoap.ActivateCashierAsync(nqwszus.ActivateCashierRequest request)
+        System.Threading.Tasks.Task<ServiceReference.ActivateCashierResponse> ServiceReference.NQWSZUSSoap.ActivateCashierAsync(ServiceReference.ActivateCashierRequest request)
         {
             return base.Channel.ActivateCashierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.ActivateCashierResponse> ActivateCashierAsync(int CashierNr, bool Status, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.ActivateCashierResponse> ActivateCashierAsync(int CashierNr, bool Status, string Host, int Port)
         {
-            nqwszus.ActivateCashierRequest inValue = new nqwszus.ActivateCashierRequest();
-            inValue.Body = new nqwszus.ActivateCashierRequestBody();
+            ServiceReference.ActivateCashierRequest inValue = new ServiceReference.ActivateCashierRequest();
+            inValue.Body = new ServiceReference.ActivateCashierRequestBody();
             inValue.Body.CashierNr = CashierNr;
             inValue.Body.Status = Status;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).ActivateCashierAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).ActivateCashierAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.ActivateUserResponse> nqwszus.NQWSZUSSoap.ActivateUserAsync(nqwszus.ActivateUserRequest request)
+        System.Threading.Tasks.Task<ServiceReference.ActivateUserResponse> ServiceReference.NQWSZUSSoap.ActivateUserAsync(ServiceReference.ActivateUserRequest request)
         {
             return base.Channel.ActivateUserAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.ActivateUserResponse> ActivateUserAsync(int UserNr, bool Status, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.ActivateUserResponse> ActivateUserAsync(int UserNr, bool Status, string Host, int Port)
         {
-            nqwszus.ActivateUserRequest inValue = new nqwszus.ActivateUserRequest();
-            inValue.Body = new nqwszus.ActivateUserRequestBody();
+            ServiceReference.ActivateUserRequest inValue = new ServiceReference.ActivateUserRequest();
+            inValue.Body = new ServiceReference.ActivateUserRequestBody();
             inValue.Body.UserNr = UserNr;
             inValue.Body.Status = Status;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).ActivateUserAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).ActivateUserAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.AssignServiceTypeResponse> nqwszus.NQWSZUSSoap.AssignServiceTypeAsync(nqwszus.AssignServiceTypeRequest request)
+        System.Threading.Tasks.Task<ServiceReference.AssignServiceTypeResponse> ServiceReference.NQWSZUSSoap.AssignServiceTypeAsync(ServiceReference.AssignServiceTypeRequest request)
         {
             return base.Channel.AssignServiceTypeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.AssignServiceTypeResponse> AssignServiceTypeAsync(int CashierNr, int ServiceType, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.AssignServiceTypeResponse> AssignServiceTypeAsync(int CashierNr, int ServiceType, string Host, int Port)
         {
-            nqwszus.AssignServiceTypeRequest inValue = new nqwszus.AssignServiceTypeRequest();
-            inValue.Body = new nqwszus.AssignServiceTypeRequestBody();
+            ServiceReference.AssignServiceTypeRequest inValue = new ServiceReference.AssignServiceTypeRequest();
+            inValue.Body = new ServiceReference.AssignServiceTypeRequestBody();
             inValue.Body.CashierNr = CashierNr;
             inValue.Body.ServiceType = ServiceType;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).AssignServiceTypeAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).AssignServiceTypeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.UnssignServiceTypeResponse> nqwszus.NQWSZUSSoap.UnssignServiceTypeAsync(nqwszus.UnssignServiceTypeRequest request)
+        System.Threading.Tasks.Task<ServiceReference.UnssignServiceTypeResponse> ServiceReference.NQWSZUSSoap.UnssignServiceTypeAsync(ServiceReference.UnssignServiceTypeRequest request)
         {
             return base.Channel.UnssignServiceTypeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.UnssignServiceTypeResponse> UnssignServiceTypeAsync(int CashierNr, int ServiceType, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.UnssignServiceTypeResponse> UnssignServiceTypeAsync(int CashierNr, int ServiceType, string Host, int Port)
         {
-            nqwszus.UnssignServiceTypeRequest inValue = new nqwszus.UnssignServiceTypeRequest();
-            inValue.Body = new nqwszus.UnssignServiceTypeRequestBody();
+            ServiceReference.UnssignServiceTypeRequest inValue = new ServiceReference.UnssignServiceTypeRequest();
+            inValue.Body = new ServiceReference.UnssignServiceTypeRequestBody();
             inValue.Body.CashierNr = CashierNr;
             inValue.Body.ServiceType = ServiceType;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).UnssignServiceTypeAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).UnssignServiceTypeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.IsServiceTypeStatusActiveResponse> nqwszus.NQWSZUSSoap.IsServiceTypeStatusActiveAsync(nqwszus.IsServiceTypeStatusActiveRequest request)
+        System.Threading.Tasks.Task<ServiceReference.IsServiceTypeStatusActiveResponse> ServiceReference.NQWSZUSSoap.IsServiceTypeStatusActiveAsync(ServiceReference.IsServiceTypeStatusActiveRequest request)
         {
             return base.Channel.IsServiceTypeStatusActiveAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.IsServiceTypeStatusActiveResponse> IsServiceTypeStatusActiveAsync(int ServiceType, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.IsServiceTypeStatusActiveResponse> IsServiceTypeStatusActiveAsync(int ServiceType, string Host, int Port)
         {
-            nqwszus.IsServiceTypeStatusActiveRequest inValue = new nqwszus.IsServiceTypeStatusActiveRequest();
-            inValue.Body = new nqwszus.IsServiceTypeStatusActiveRequestBody();
+            ServiceReference.IsServiceTypeStatusActiveRequest inValue = new ServiceReference.IsServiceTypeStatusActiveRequest();
+            inValue.Body = new ServiceReference.IsServiceTypeStatusActiveRequestBody();
             inValue.Body.ServiceType = ServiceType;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).IsServiceTypeStatusActiveAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).IsServiceTypeStatusActiveAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.IsCashierStatusActiveResponse> nqwszus.NQWSZUSSoap.IsCashierStatusActiveAsync(nqwszus.IsCashierStatusActiveRequest request)
+        System.Threading.Tasks.Task<ServiceReference.IsCashierStatusActiveResponse> ServiceReference.NQWSZUSSoap.IsCashierStatusActiveAsync(ServiceReference.IsCashierStatusActiveRequest request)
         {
             return base.Channel.IsCashierStatusActiveAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.IsCashierStatusActiveResponse> IsCashierStatusActiveAsync(int CashierNr, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.IsCashierStatusActiveResponse> IsCashierStatusActiveAsync(int CashierNr, string Host, int Port)
         {
-            nqwszus.IsCashierStatusActiveRequest inValue = new nqwszus.IsCashierStatusActiveRequest();
-            inValue.Body = new nqwszus.IsCashierStatusActiveRequestBody();
+            ServiceReference.IsCashierStatusActiveRequest inValue = new ServiceReference.IsCashierStatusActiveRequest();
+            inValue.Body = new ServiceReference.IsCashierStatusActiveRequestBody();
             inValue.Body.CashierNr = CashierNr;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).IsCashierStatusActiveAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).IsCashierStatusActiveAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<nqwszus.IsUserStatusActiveResponse> nqwszus.NQWSZUSSoap.IsUserStatusActiveAsync(nqwszus.IsUserStatusActiveRequest request)
+        System.Threading.Tasks.Task<ServiceReference.IsUserStatusActiveResponse> ServiceReference.NQWSZUSSoap.IsUserStatusActiveAsync(ServiceReference.IsUserStatusActiveRequest request)
         {
             return base.Channel.IsUserStatusActiveAsync(request);
         }
         
-        public System.Threading.Tasks.Task<nqwszus.IsUserStatusActiveResponse> IsUserStatusActiveAsync(int UserNr, string Host, int Port)
+        public System.Threading.Tasks.Task<ServiceReference.IsUserStatusActiveResponse> IsUserStatusActiveAsync(int UserNr, string Host, int Port)
         {
-            nqwszus.IsUserStatusActiveRequest inValue = new nqwszus.IsUserStatusActiveRequest();
-            inValue.Body = new nqwszus.IsUserStatusActiveRequestBody();
+            ServiceReference.IsUserStatusActiveRequest inValue = new ServiceReference.IsUserStatusActiveRequest();
+            inValue.Body = new ServiceReference.IsUserStatusActiveRequestBody();
             inValue.Body.UserNr = UserNr;
             inValue.Body.Host = Host;
             inValue.Body.Port = Port;
-            return ((nqwszus.NQWSZUSSoap)(this)).IsUserStatusActiveAsync(inValue);
+            return ((ServiceReference.NQWSZUSSoap)(this)).IsUserStatusActiveAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
         }
+        
+        #if !NET6_0_OR_GREATER
+        public virtual System.Threading.Tasks.Task CloseAsync()
+        {
+            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginClose(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndClose));
+        }
+        #endif
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
         {

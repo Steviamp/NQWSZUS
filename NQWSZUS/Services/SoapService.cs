@@ -1,4 +1,6 @@
 ﻿
+using ServiceReference;
+
 namespace NQWSZUS.Services
 {
     public class SoapService : ISoapService
