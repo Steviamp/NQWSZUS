@@ -1,0 +1,98 @@
+﻿/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ΚΕΝΤΡΙΚΟ CONTAINER */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* SELECT ΔΙΑΚΕΙΡΙΣΗΣ ΚΑΤΑΣΤΗΜΑΤΟΣ */
+#store-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+/* ΛΙΣΤΑ ΥΠΗΡΕΣΙΩΝ */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ΚΑΡΤΕΛΕΣ ΥΠΗΡΕΣΙΑΣ */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Ensure enough height for space-between to work */
+    min-height: 180px;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 18px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ΕΝΕΡΓΗ/ΑΝΕΝΕΡΓΗ ΚΑΡΤΕΛΑ */
+    .service-card.active {
+        border-color: #4caf50;
+    }
+
+    .service-card.inactive {
+        opacity: 0.6;
+    }
+
+/* ΟΝΟΜΑ ΥΠΗΡΕΣΙΑΣ */
+.service-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ΚΟΥΜΠΙ TOGGLE */
+.toggle-button {
+    margin-top: auto !important;
+    margin-left: auto !important;
+    border: none;
+    border-radius: 4px;
+    background: #4caf50;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .toggle-button.inactive {
+        background: #f44336;
+    }
+
+    .toggle-button:hover {
+        filter: brightness(0.9);
+    }

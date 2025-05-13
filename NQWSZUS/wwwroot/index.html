@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Service Toggle Dashboard</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
     <div class="container">
-        <h1>Stores & Services</h1>
-        <label for="store-select">Select Store:</label>
-        <select id="store-select">
-            <option value="">-- Choose a store --</option>
-        </select>
+        <h1>Υπηρεσίες Ταμείου Παρακαταθηκών και Δανείων</h1>
+        <label for="store-select">Επιλογή Καταστήματος:</label>
+        <div class="container">
+            <select id="store-select">
+                <option value="">-- Choose a store --</option>
+            </select>
+        </div>
         <div id="services-container"></div>
     </div>
     <script src="data/stores.js"></script>
