@@ -3,4 +3,18 @@
 GET {{NQWSZUS_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+### 1. Get all Service Types
+GET http://localhost:5068/api/servicetype?host=127.0.0.1&port=8899
+Accept: application/json
+
+### 2. Get ServiceType Status
+GET http://localhost:5068/api/servicetypestatus/1?host=127.0.0.1&port=8899
+Accept: application/json
+
+### 3. Toggle ServiceType Status (activate)
+POST http://localhost:5068/api/servicetypestatus/1?status=true&host=127.0.0.1&port=8899
+Accept: application/json
+
+### 4. Toggle ServiceType Status (deactivate)
+POST http://localhost:5068/api/servicetypestatus/1?status=false&host=127.0.0.1&port=8899
+Accept: application/json

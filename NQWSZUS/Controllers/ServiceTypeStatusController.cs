@@ -3,6 +3,7 @@ using NQWSZUS.Services;
 namespace NQWSZUS.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using ServiceReference;
     using System.Threading.Tasks;
 
     namespace NQWSReception.Controllers
@@ -15,6 +16,15 @@ namespace NQWSZUS.Controllers
             public ServiceTypeStatusController(ISoapService soapService)
             {
                 _soapService = soapService;
+            }
+
+            [HttpGet]
+            public async Task<ActionResult<List<ServiceType>>> GetAll(
+            [FromQuery] string host,
+            [FromQuery] int port)
+            {
+                var list = await _soapService.GetServiceTypeListAsync(host, port);
+                return Ok(list);
             }
 
             [HttpGet("{serviceType}")]

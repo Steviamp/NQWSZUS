@@ -22,5 +22,12 @@ namespace NQWSZUS.Services
             var response = await _client.ActivateServiceTypeAsync(serviceType, status, host, port);
             return response.Body?.ActivateServiceTypeResult ?? false;
         }
+
+        public async Task<List<ServiceType>> GetServiceTypeListAsync(string host, int port)
+       {
+           var response = await _client.GetServiceTypeListAsync(host, port);
+          return response.Body?.GetServiceTypeListResult?.ToList()
+                  ?? new List<ServiceType>();
+        }
     }
 }
