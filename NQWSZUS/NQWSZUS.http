@@ -1,0 +1,6 @@
+@NQWSZUS_HostAddress = http://localhost:5209
+
+GET {{NQWSZUS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
