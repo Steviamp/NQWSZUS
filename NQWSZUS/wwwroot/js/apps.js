@@ -1,7 +1,7 @@
 ﻿document.addEventListener("DOMContentLoaded", () => {
     const storeSelect = document.getElementById("store-select");
     const servicesContainer = document.getElementById("services-container");
-    const apiBase = "http://localhost:5068/api";
+    const apiBase = "http://localhost:7123/api";
 
     // Populate store dropdown
     stores.forEach(store => {

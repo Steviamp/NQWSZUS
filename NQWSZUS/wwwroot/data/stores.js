@@ -1,4 +1,4 @@
-﻿export const stores = [
+﻿const stores = [
     {
         id: 1,
         name: "Store A",
