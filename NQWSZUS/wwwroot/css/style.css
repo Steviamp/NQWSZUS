@@ -21,16 +21,7 @@
     color: #fff !important;
 }
 
-```css
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.card-title {
-    font-weight: 500;
-}
-
-#servicesTable th,
-#servicesTable td {
-    vertical-align: middle;
+.form-check-input:checked {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
 }
