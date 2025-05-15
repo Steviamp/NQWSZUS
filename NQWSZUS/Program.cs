@@ -2,6 +2,11 @@ using NQWSZUS.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add built-in logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
 // Add services to the container.
 
 builder.Services.AddScoped<ISoapService, SoapService>();

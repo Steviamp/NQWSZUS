@@ -6,7 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="wwwroot\css\style.css" />
     <None Include="wwwroot\data\stores.js" />
     <None Include="wwwroot\index.html" />
     <None Include="wwwroot\js\apps.js" />

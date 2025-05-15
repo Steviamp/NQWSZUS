@@ -32,13 +32,14 @@
         // Render each service with toggle
         serviceTypes.forEach(svc => {
             const div = document.createElement("div");
-            div.className = "service-item";
+            div.className = "service-card";
 
             const label = document.createElement("span");
             label.textContent = svc.Name || svc.name;
 
             const toggle = document.createElement("input");
             toggle.type = "checkbox";
+            toggle.className = "toggle-button";
             toggle.disabled = true;
 
             // Fetch current status
