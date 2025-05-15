@@ -1,0 +1,36 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFE0;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+#servicesTable th,
+#servicesTable td {
+    vertical-align: middle;
+}
+
+.table-dark th {
+    background-color: #7C1C1E !important;
+}
+
+.badge {
+    background-color: #7C1C1E !important;
+    color: #fff !important;
+}
+
+```css
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+#servicesTable th,
+#servicesTable td {
+    vertical-align: middle;
+}
